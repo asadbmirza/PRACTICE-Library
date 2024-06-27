@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <div class="header">
+            <span>Library</span>
+            <button type="button" class="addBook">Add a New Book</button>
+        </div>
+        <div class="content">
+            <dialog>
+                <div>
+                    <button autofocus>X</button>
+                    <p>Add a new book</p>
+                    <form>
+                        <ul>
+                            <li>
+                                <label for="name">Name: </label>
+                                <input type="text" name="name" id="name" required>
+                            </li>
+                            <li>
+                                <label for="author">Author</label>
+                                <input type="text" name="author" id="author" required>
+                            </li>
+                            <li>
+                                <label for="pages">Pages</label>
+                                <input type="number" name="pages" id="pages" required>
+                            </li>
+                            <li>
+                                <label for="read">Read?</label>
+                                <input type= "checkbox" name="read" id="read" required>
+                            </li>
+                            <li>
+                                <button type="submit" id="submit">Submit</button>
+                            </li>
+                        </ul>
+                    
+                    </form>
+                </div>
+                
+            </dialog>
+
+            <table class="transparent">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Pages</th>
+                        <th scope="col">Read</th>
+                        <th scope="col" id="remove">Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+            
+                </tbody>
+            </table>
+        </div>
+        <div class="footer"></div>
+    </body>
+</html>
